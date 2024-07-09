@@ -1,0 +1,264 @@
+@font-face {
+  font-family: "plusjakarta-bold";
+  src: url("assets/fonts/static/PlusJakartaSans-Bold.ttf") format("woff2");
+}
+@font-face {
+  font-family: "plusjakarta-medium";
+  src: url("assets/fonts/static/PlusJakartaSans-Medium.ttf") format("woff2");
+}
+@font-face {
+  font-family: "plusjakarta-italic-var";
+  src: url("assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf")
+    format("woff2");
+  font-weight: light;
+}
+@font-face {
+  font-family: "plusjakarta-var";
+  src: url("assets/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("woff2");
+}
+
+.desktop {
+  font-family: "plusjakarta-var";
+  font-weight: 200;
+  font-size: x-large !important;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin: 0;
+  width: 90%;
+  align-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.div-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+}
+
+.input-group {
+  border: 1px solid grey;
+  border-radius: 6px;
+  width: auto;
+  align-self: center;
+}
+.input-group:hover {
+  border-width: 1.4px;
+}
+
+.focus {
+  border-color: #d9db30;
+}
+
+.tablet-only {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label {
+  font-size: 20px;
+  font-weight: 200 !important;
+}
+.input-group-text {
+  background-color: rgb(158, 195, 237) !important;
+}
+.focused-span {
+  background-color: #d9db30 !important;
+}
+
+.input-group input {
+  cursor: pointer;
+
+  height: 2.6rem;
+}
+
+input[type="number"]:focus {
+  font-size: large;
+  border: none;
+  box-shadow: none;
+}
+.radio-label {
+  width: 90%;
+}
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.radio-group {
+  display: flex;
+  width: 90%;
+  align-self: center;
+  border: 1.4px solid grey;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.radio-group:hover {
+  border-color: #d9db30;
+}
+
+.radio-group label,
+.radio-group input {
+  font-weight: 500 !important;
+  margin: 5px;
+}
+.selected {
+  background-color: rgb(238, 238, 88);
+}
+
+.calculate-repayments {
+  width: 90%;
+  height: 50px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 0px;
+  background-color: #d9db30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.calculate-repayments:hover {
+  background-color: rgba(235, 237, 151, 255);
+}
+
+a {
+  color: black !important;
+  font-weight: 100;
+  font-size: medium;
+  align-self: center;
+  width: 90%;
+}
+
+a:hover {
+  font-weight: 400;
+}
+
+.results-container {
+  color: white;
+  background-color: #133040;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+.results-container p {
+  margin: 20px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.completed-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completed-results h2,
+.completed-results p {
+  margin-top: 20px;
+  text-align: start;
+  width: 90%;
+}
+
+.results {
+  width: 90%;
+  background-color: #0e2431;
+  border-radius: 6px;
+  border-top: 5px solid #d9db30;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.results div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 7px 0 2px 10px;
+}
+
+.results div label {
+  font-size: 1rem;
+}
+#monthly-payment {
+  font-size: 2rem;
+  color: #d9db30;
+  font-weight: bold;
+}
+
+#total {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+
+.error-message {
+  width: 90%;
+  font-size: 1rem;
+  color: red;
+}
+.radio-container .error-message {
+  align-self: center;
+}
+.error-state {
+  border-color: red;
+}
+
+.span-error-state {
+  color: white !important;
+  background-color: red !important;
+}
+
+.span-focus-state {
+  background-color: #d9db30 !important;
+}
+
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 20px;
+  }
+  .tablet-only {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .calculate-repayments {
+    width: 45%;
+    align-self: flex-start;
+    transform: translateX(40px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 1px solid grey;
+  }
+  .calculate-repayments {
+    font-size: 20px;
+  }
+}
